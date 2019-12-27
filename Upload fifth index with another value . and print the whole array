@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100]={5,8,4,1,2,4,7,6,9,10};
+    int i;
+    printf("Enter a value for index 5::");
+    scanf("%d",&arr[5]);
+    for(i = 0; i< 100; i++)
+    {
+        printf("%d\n",arr[i]);
+    }
+    return 0;
+}
+
