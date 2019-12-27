@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int arr[100]={5,8,4,1,2,4,7,6,9,10};
+    int i,x,k=0;
+    printf("Enter a value for search");
+    scanf("%d",&x);
+    for(i = 0; i< 100; i++)
+    {
+        if(x == arr[i])
+        {
+            k = 1;
+            break;
+        }
+
+    }
+    if(k)
+        printf("Value find at index %d ",i);
+    else
+        printf("Value not find");
+    return 0;
+}
+
