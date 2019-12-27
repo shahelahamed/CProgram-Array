@@ -1,0 +1,26 @@
+#include<stdio.h>
+void display(int a[],int n)
+{
+    if(n==9)
+    {
+        printf("%d ",a[n]);
+        return 0;
+    }
+    else
+    {
+        printf("%d ",a[n]);
+        return display(a,n+1);
+    }
+}
+int main()
+{
+    int arr[100]={5,8,4,1,2,4,7,6,9,10};
+
+    display(arr,0);
+
+    return 0;
+}
+
+
+
+
